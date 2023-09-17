@@ -1,0 +1,11 @@
+id_curso,id_sede,nombre_curso,horario,duracion,dias,cantidad_estudiantes
+111000,1,Pensamiento Cuantitativo,7,2,"lunes;viernes",33
+112350,1,Calculo,10,2,"lunes;miercoles;viernes",53
+789530,1,POO,12,3,"lunes;viernes",26
+752360,2,Algebra Lineal,7,2,"martes;jueves",46
+201635,2,Estadistica,10,2,"martes;jueves",16
+956242,2,Comunicacion Efectiva,12,2,"miercoles;viernes",53
+123456,3,Introduccion a la Ingenieria,7,3,"lunes;miercoles",52
+654123,3,Quimica,10,2,"lunes;jueves",41
+985236,3,Fisica,12,2,"lunes;viernes",36
+741258,1,Ciudadania,15,2,"lunes;jueves",30
