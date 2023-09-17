@@ -1,4 +1,12 @@
+//Bryan Alberto Martínez Orellana
+//Carnét 23542
+//Ingeniería en Ciencias de la Computación
+//Programación Orientada a Objetos
+//Creación: 16/09/2023
+//Última modificación: 17/09/2023
+
 public class Salon {
+    //Establecemos los atributos a utilizar
     private int id_Sede;
     private char edificio;
     private int nivel;
@@ -6,7 +14,7 @@ public class Salon {
     private int capacidad;
     private String[][] calendario = new String[16][7];
 
-
+    //Definimos los getters del objeto
     public char getEdificio(){
         return this.edificio;
     }
@@ -35,10 +43,12 @@ public class Salon {
         return this.calendario;
     }
 
+    //Establecemos el setter para poder definir los valores de nuestro array bidimensional
     public void setCalendario(int indiceHora, int indiceDia, String id_curso){
         calendario[indiceHora][indiceDia] = id_curso;
     }
 
+    //Método para recorrer el array bidimensaional de calendario, y lo muestra como una tabla
     public void mostrarDisponibilidad() {
         System.out.println("Disponibilidad del salón:");
         
@@ -58,7 +68,7 @@ public class Salon {
         }
     }
     
-
+    //Constructor para definir los valores de nuestras variables
     public Salon(int id_Sede, char edificio, int nivel, int id_Salon, int capacidad) {
         this.id_Sede = id_Sede;
         this.edificio = edificio;

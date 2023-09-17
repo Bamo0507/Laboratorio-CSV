@@ -1,3 +1,11 @@
+//Bryan Alberto Martínez Orellana
+//Carnét 23542
+//Ingeniería en Ciencias de la Computación
+//Programación Orientada a Objetos
+//Creación: 16/09/2023
+//Última modificación: 17/09/2023
+
+//Importamos las librerías a utilizar
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
