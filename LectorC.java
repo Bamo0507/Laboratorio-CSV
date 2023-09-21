@@ -50,6 +50,11 @@ public class LectorC {
         return validacion;
     }
 
+    //Setter para numLinea
+    public void setNumLinea(int numLinea){
+        this.numLinea = numLinea;
+    }
+
     //Getter para la lista de cursos
     public ArrayList<Curso> getCursos(){
         return this.cursos;
@@ -122,8 +127,7 @@ public class LectorC {
                                                             Curso clase = new Curso(curso, sede, nombreCurso, hora, dura, fecha, cant);
                                                             cursos.add(clase);
                                                             validacion = true;
-                                                            filas.add(columnas);
-                                                    
+                                                            filas.add(columnas);   
                                                     //Se comienzan a colocar los mensajes de error
                                                         } else{
                                                             System.err.println("Error en la línea " + numLinea + ": la cantidad de estudiantes solo puede estar entre 1 y 60.");

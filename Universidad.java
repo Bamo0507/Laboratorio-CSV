@@ -51,11 +51,13 @@ public class Universidad {
             System.out.println("Se analizarán los datos........");
             System.out.println("------------------------------------");
             //Se trata de leer el archivo de los Salones
+            lectorS.setNumLinea(0);
             lectorS.Bienvenida();
             lectorS.VerificarCSV();
             //Si se cumple con la lectura del archivo de los Salones se tratará de leer el archivo de los Cursos
             if(lectorS.getValidacion() == true){
                 System.out.println("");
+                lectorC.setNumLinea(0);
                 lectorC.Bienvenida();
                 lectorC.VerificarCSV(); 
                 System.out.println("");
@@ -139,6 +141,7 @@ public class Universidad {
                                     System.err.println("No ha colocado un carácter, vuelva a intentarlo.");
                                 }
                             }
+
                             System.out.println("------------------------------");
                             for(Salon salon: lectorS.getSalones()){
                                 //Buscamos si algun salon dentro de nuestro Array de salones cumple con la informacion indicada, si sí, les mostramos lo que se contiene en su calendario
@@ -156,12 +159,10 @@ public class Universidad {
                                     salon.mostrarDisponibilidad();
                                     System.out.println("");
                                     break;
-                                } else { //Codigo a mostrar en caso de que no se encuentre un salon como el indicado
-                                    System.out.println("No se ha encontrado un salon con las especificaciones que ha dado.");
-                                    System.out.println("-----------------------------");
-                                    break;
                                 }
                             }
+                            System.out.println("No se ha encontrado un salon con las especificaciones que ha dado.");
+                            System.out.println("-----------------------------");
                             break;
                             
 
@@ -179,13 +180,12 @@ public class Universidad {
                                     System.out.println("Cantidad Estudiantes: " + curso.getCantEstudiantes());
                                     System.out.println("");
                                     break;
-                                } else{ //Código a mostrar en caso de que no se encuentre el ID del curso dado
-                                    System.out.println("No se ha encontrado un curso con ese ID :(");
-                                    System.out.println("------------------");
-                                    System.out.println("");
-                                    break;
                                 }
+                                
                             }
+                            System.out.println("No se ha encontrado un curso con ese ID :(");
+                            System.out.println("------------------");
+                            System.out.println("");
                             break;
                             
 

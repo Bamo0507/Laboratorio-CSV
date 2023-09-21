@@ -41,6 +41,11 @@ public class LectorS {
         return this.validacion;
     }
 
+    //Setter para numLinea
+    public void setNumLinea(int numLinea){
+        this.numLinea = numLinea;
+    }
+
     //Getter para nuestra lista de salones
     public ArrayList<Salon> getSalones(){
         return this.salones;
